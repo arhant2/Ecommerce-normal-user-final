@@ -1,0 +1,26 @@
+/* ----------------------------------
+Navbar
+----------------------------------*/
+
+.navbar {
+  height: var(--height-nav);
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--font-family-secondary);
+  padding: 0 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}

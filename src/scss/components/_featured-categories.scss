@@ -1,0 +1,40 @@
+/* ----------------------------------
+Featured Categories
+----------------------------------*/
+
+.featured-categories {
+  width: 90%;
+  max-width: var(--width-main);
+  margin: auto;
+  margin-top: 8rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+
+  &__box {
+    // background-color: lawngreen;
+    padding: 1rem 3rem;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+
+    &:nth-child(odd) {
+      background-color: var(--color-featured-categories-1);
+    }
+
+    &:nth-child(even) {
+      background-color: var(--color-featured-categories-2);
+    }
+  }
+
+  &__img {
+    width: 90%;
+  }
+
+  &__content {
+    text-align: right;
+  }
+}

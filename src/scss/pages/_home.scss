@@ -1,0 +1,35 @@
+/* ----------------------------------
+Home
+----------------------------------*/
+
+/* ----- Home top container ----- */
+.home-top-container {
+  background: radial-gradient(#fdfbfb, #ebedee);
+  min-height: 100vh;
+}
+
+/* ----- Home intro box ----- */
+.home-intro-box {
+  width: 90%;
+  max-width: var(--width-main);
+  margin: 0 auto;
+  height: calc(100vh - var(--height-nav));
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+
+  align-items: center;
+  text-align: center;
+
+  &__left {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  &__img {
+    margin-left: 10%;
+    display: inline-block;
+    width: 70%;
+  }
+}

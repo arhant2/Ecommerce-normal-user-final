@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyElectronics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Permanent Marker', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Playfair Display', serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'IBM Plex Mono', monospace; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/208182354f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ----------- navbar ----------- -->
+
+    <nav>
+      <a href="/">
+        <div id="logo-box">
+          <!-- <img src="img/logo2.png" alt="logo" width="40px" /> -->
+          <span><i class="fas fa-camera-retro"></i> MyElectronics</span>
+        </div>
+      </a>
+      <ul>
+        <li>
+          <a href="all-products.html"><i class="fas fa-search"></i></a>
+        </li>
+        <li>
+          <a href="login.html"><i class="far fa-user"></i></a>
+        </li>
+        <li>
+          <a href="wishlist.html"><i class="far fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="cart.html"><i class="fas fa-shopping-basket"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ----------- reviews ----------- -->
+
+    <div id="spec-prod-extras-wrapper">
+      <div id="spec-prod-extras-outer">
+        <div id="reviews-all-wrapper">
+          <section id="reviews-section">
+            <div id="reviews-all-h2-and-sort-by">
+              <h2>Reviews</h2>
+              <select
+                id="reviews-all-sort-by-select"
+                onchange="window.location = this.value"
+              >
+                <option value="#">Sort By: Newest First</option>
+                <option value="#" selected>Sort By: Positive first</option>
+                <option value="#">Sort By: Negative first</option>
+              </select>
+            </div>
+
+            <div id="reviews-all-desc-head">
+              <div id="reviews-all-desc-head-left">
+                <a href="product.html"
+                  ><img src="img/product-new-arrival-1.jpg" alt="product"
+                /></a>
+              </div>
+              <div id="reviews-all-desc-head-right">
+                <div id="reviews-all-desc-head-brand">Amazon</div>
+                <a href="product.html">
+                  <h3>
+                    Echo Dot (3rd Gen) – Smart speaker with Alexa (Black)
+                  </h3></a
+                >
+                <div id="reviews-all-prices-savings">
+                  <div id="reviews-all-price-outer">
+                    <span id="reviews-all-price-act">₹5,999</span>
+                    <strike id="reviews-all-price-cross">₹7,589</strike>
+                  </div>
+                  <div id="reviews-all-savings">43% off</div>
+                </div>
+              </div>
+            </div>
+            <div id="reviews-top-outer" class="reviews-inner-act">
+              <!-- <h4>Customer Reviews</h4> -->
+              <div id="reviews-top-inner-bottom">
+                <div id="reviews-net-outer">
+                  <div id="reviews-num-and-stars">
+                    <div id="reviews-num">4.5 <i class="fas fa-star"></i></div>
+                    <div class="reviews-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+
+                  <div id="reviews-based-on">
+                    327 reviews <i class="far fa-smile"></i>
+                  </div>
+                </div>
+                <button class="btn-secondary" id="write-review-btn">
+                  <i class="fas fa-pen"></i> Write a review
+                </button>
+              </div>
+            </div>
+
+            <!-- review form -->
+
+            <div
+              id="reviews-form-wrapper"
+              class="reviews-inner-act display-none"
+            >
+              <h3>Write a review</h3>
+              <form>
+                <div class="reviews-form-group">
+                  <label for="reviews-form-name">Name</label>
+                  <input
+                    type="text"
+                    id="reviews-form-name"
+                    value="Arhant Jain"
+                    disabled
+                  />
+                </div>
+                <div class="reviews-form-group">
+                  <label for="reviews-form-ratings">Ratings</label>
+                  <input
+                    id="reviews-form-ratings"
+                    type="number"
+                    value="0"
+                    min="1"
+                    max="5"
+                  />
+                  <div id="reviews-form-rating-star-btn-wrapper">
+                    <button
+                      type="button"
+                      class="reviews-form-rating-star-btn"
+                      id="reviews-form-rating-star-btn-1"
+                    >
+                      <i class="far fa-star"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="reviews-form-rating-star-btn"
+                      id="reviews-form-rating-star-btn-2"
+                    >
+                      <i class="far fa-star"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="reviews-form-rating-star-btn"
+                      id="reviews-form-rating-star-btn-3"
+                    >
+                      <i class="far fa-star"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="reviews-form-rating-star-btn"
+                      id="reviews-form-rating-star-btn-4"
+                    >
+                      <i class="far fa-star"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="reviews-form-rating-star-btn"
+                      id="reviews-form-rating-star-btn-5"
+                    >
+                      <i class="far fa-star"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="reviews-form-group">
+                  <label for="reviews-form-title">Review Title</label>
+                  <input
+                    placeholder="Review title"
+                    type="text"
+                    id="review-form-title"
+                  />
+                </div>
+                <div class="reviews-form-group">
+                  <label for="reviews-form-body">Body of Review</label>
+                  <textarea
+                    placeholder="Write a review description here..."
+                    id="reviews-form-body"
+                    rows="7"
+                  ></textarea>
+                </div>
+                <button id="reviews-form-submit-button" class="btn-secondary">
+                  Submit Review
+                </button>
+              </form>
+            </div>
+
+            <div class="reviews-inner-act">
+              <div class="reviews-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h4>Worth it!</h4>
+              <div class="reviews-by-and-date">
+                <span class="reviews-by">Arhant</span>
+                on
+                <span class="reviews-date">Oct 12, 2020</span>
+              </div>
+              <div class="reviews-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae ad atque praesentium distinctio incidunt unde quo
+                eveniet. Doloribus quasi labore magnam sequi voluptatem deleniti
+                accusamus, architecto deserunt aut facere omnis provident
+                repudiandae ullam aperiam voluptatibus dicta maiores.
+                Reprehenderit id culpa commodi aut ullam officiis cupiditate quo
+                minus quibusdam ad.
+              </div>
+              <div class="mark-inapp-outer">
+                <button class="btn-reviews">Mark as Inappropriate</button>
+              </div>
+            </div>
+
+            <div class="reviews-inner-act">
+              <div class="reviews-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h4>Best to buy</h4>
+              <div class="reviews-by-and-date">
+                <span class="reviews-by">John</span>
+                on
+                <span class="reviews-date">Oct 11, 2020</span>
+              </div>
+              <div class="reviews-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                impedit, qui eos quam voluptates placeat voluptatum. Delectus,
+                possimus vel dignissimos odit animi dolor quia ea maiores neque,
+                nostrum omnis sint.
+              </div>
+              <div class="mark-inapp-outer">
+                <button class="btn-reviews">Mark as Inappropriate</button>
+              </div>
+            </div>
+
+            <div class="reviews-inner-act">
+              <div class="reviews-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h4>Budget Friendly and awesome</h4>
+              <div class="reviews-by-and-date">
+                <span class="reviews-by">Jack</span>
+                on
+                <span class="reviews-date">Oct 11, 2020</span>
+              </div>
+              <div class="reviews-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                molestias.
+              </div>
+              <div class="mark-inapp-outer">
+                <button class="btn-reviews">Mark as Inappropriate</button>
+              </div>
+            </div>
+
+            <div class="reviews-inner-act">
+              <div class="reviews-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h4>The Delivery was very fast and product is as expected</h4>
+              <div class="reviews-by-and-date">
+                <span class="reviews-by">Jack</span>
+                on
+                <span class="reviews-date">Oct 11, 2020</span>
+              </div>
+              <div class="reviews-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                molestias.
+              </div>
+              <div class="mark-inapp-outer">
+                <button class="btn-reviews">Mark as Inappropriate</button>
+              </div>
+            </div>
+
+            <div class="reviews-inner-act">
+              <div class="reviews-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h4>Great!!! It's really awesome.</h4>
+              <div class="reviews-by-and-date">
+                <span class="reviews-by">Jack</span>
+                on
+                <span class="reviews-date">Oct 11, 2020</span>
+              </div>
+              <div class="reviews-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                molestias.
+              </div>
+              <div class="mark-inapp-outer">
+                <button class="btn-reviews">Mark as Inappropriate</button>
+              </div>
+            </div>
+
+            <button id="see-more-reviews">See more &gt;</button>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------- similar products ----------- -->
+
+    <section class="products-outer">
+      <h2>Similar Products</h2>
+      <div class="products-inner">
+        <div class="each-product-outer">
+          <img
+            class="product-image"
+            src="img/product-new-arrival-1.jpg"
+            alt=""
+          />
+          <div class="product-brand">Amazon</div>
+          <div class="product-name">Alexa By Amazon</div>
+          <div class="product-ratings-outer">
+            <span class="product-ratings-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <span class="product-ratings-count">3213 reviews</span>
+          </div>
+          <div class="product-price">
+            <span class="product-price-act">₹6,000</span>
+            <strike class="product-price-strike">₹7,000</strike>
+          </div>
+        </div>
+        <div class="each-product-outer">
+          <img
+            class="product-image"
+            src="img/product-new-arrival-4.jpg"
+            alt=""
+          />
+          <div class="product-brand">Apple</div>
+          <div class="product-name">Apple Watch Series 5</div>
+          <div class="product-ratings-outer">
+            <span class="product-ratings-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <span class="product-ratings-count">3213 reviews</span>
+          </div>
+          <div class="product-price">
+            <span class="product-price-act">₹29,000</span>
+            <strike class="product-price-strike">₹35,000</strike>
+          </div>
+        </div>
+        <div class="each-product-outer">
+          <img
+            class="product-image"
+            src="img/product-new-arrival-5.jpg"
+            alt=""
+          />
+          <div class="product-brand">Google</div>
+          <div class="product-name">Google Home Mini</div>
+          <div class="product-ratings-outer">
+            <span class="product-ratings-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <span class="product-ratings-count">3213 reviews</span>
+          </div>
+          <div class="product-price">
+            <span class="product-price-act">₹7,599</span>
+            <strike class="product-price-strike">₹8,000</strike>
+          </div>
+        </div>
+        <div class="each-product-outer">
+          <img
+            class="product-image"
+            src="img/product-new-arrival-6.jpg"
+            alt=""
+          />
+          <div class="product-brand">Apple</div>
+          <div class="product-name">Apple iPhone 11 (64GB)</div>
+          <div class="product-ratings-outer">
+            <span class="product-ratings-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <span class="product-ratings-count">3213 reviews</span>
+          </div>
+          <div class="product-price">
+            <span class="product-price-act">₹1,05,273</span>
+            <strike class="product-price-strike">₹1,25,999</strike>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------- footer ----------- -->
+
+    <div id="footer-outermost-container">
+      <div id="footer-outer">
+        <footer>
+          <div class="footer-col-gen" id="footer-col-1">
+            <div id="footer-logo-outer">
+              <div id="footer-logo">
+                <i class="fas fa-camera-retro"></i> MyElectronics
+              </div>
+              <div id="footer-tag-line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+            <address>
+              <div id="footer-mail">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:arhantjain2@gmail.com">arhantjain2@gmail.com</a>
+              </div>
+              <div id="footer-mobile">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+919999999999">+91 9999 999 999</a>
+              </div>
+            </address>
+          </div>
+          <div class="footer-col-gen" id="footer-col-2">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-gen" id="footer-col-3">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">24/7 Support</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-gen" id="footer-col-4">
+            <h3>Important Links</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Testiomonials</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <div id="footer-copyright-payment-outer">
+        <div id="copyright">
+          Copyright &copy; 2020 MyElectronics | All Rights Reserved
+        </div>
+        <div id="footer-payment-outer">
+          <div class="footer-payment-each">
+            <img
+              src="img/payment-logo-1.png"
+              width="50px"
+              height="30px"
+              alt=""
+            />
+          </div>
+          <div class="footer-payment-each">
+            <img
+              src="img/payment-logo-2.png"
+              width="50px"
+              height="30px"
+              alt=""
+            />
+          </div>
+          <div class="footer-payment-each">
+            <img
+              src="img/payment-logo-3.png"
+              width="50px"
+              height="30px"
+              alt=""
+            />
+          </div>
+          <div class="footer-payment-each">
+            <img
+              src="img/payment-logo-4.png"
+              width="50px"
+              height="30px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/review-form.js"></script>
+  </body>
+</html>

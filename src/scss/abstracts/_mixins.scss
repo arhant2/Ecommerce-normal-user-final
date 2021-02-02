@@ -1,0 +1,17 @@
+@mixin currentColorOptions($colorDefault: primary) {
+  --current-color-lighter: var(--color-#{$colorDefault}-lighter);
+  --current-color-light: var(--color-#{$colorDefault}-light);
+  --current-color: var(--color-#{$colorDefault});
+  --current-color-dark: var(--color-#{$colorDefault}-dark);
+  --current-color-darker: var(--color-#{$colorDefault}-darker);
+
+  @each $color in $colors {
+    &--#{$color} {
+      --current-color-lighter: var(--color-#{$color}-lighter);
+      --current-color-light: var(--color-#{$color}-light);
+      --current-color: var(--color-#{$color});
+      --current-color-dark: var(--color-#{$color}-dark);
+      --current-color-darker: var(--color-#{$color}-darker);
+    }
+  }
+}
