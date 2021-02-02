@@ -56,7 +56,7 @@ $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
   --color-grey-light-4: #ccc;
 
   /* Get lihter from 1 to 4 */
-  --color-grey-dark-1: #222;
+  --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --color-grey-dark-4: #aaa;
@@ -94,6 +94,10 @@ $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
 
   /* Shadows */
   --shadow-primary: 0 1rem 2rem 0 rgba(205, 205, 205, 0.3);
+  --shadow-secondary: 0 0 0 1px #00000026, 0 2px 3px rgb(0 0 0 / 20%);
+
+  /* Gradients */
+  --gradient-primary: radial-gradient(#fdfbfb, #ebedee);
 
   /* Widths */
   --height-nav: 8rem;
