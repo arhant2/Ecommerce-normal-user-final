@@ -61,8 +61,6 @@ $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
   --color-grey-dark-3: #999;
   --color-grey-dark-4: #aaa;
 
-  --color-dark-hover: #ccae62;
-
   /* Primary color */
   --color-primary-lighter: var(--color-blue-lighter);
   --color-primary-light: var(--color-blue-light);
@@ -77,8 +75,15 @@ $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
   --color-secondary-dark: var(--color-green-dark);
   --color-secondary-darker: var(--color-green-darker);
 
+  /* Customized properties */
   --color-featured-categories-1: #dff9fb;
   --color-featured-categories-2: #ffcccc;
+
+  --color-main-btn: #f1c40f;
+  --color-main-btn-dark: #c9b975;
+
+  --color-dark-btn: var(--color-grey-dark-1);
+  --color-dark-btn-dark: #ccae62;
 
   /* Background color */
   --color-background-dark: #0a1727;

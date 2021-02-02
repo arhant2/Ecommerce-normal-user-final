@@ -14,8 +14,10 @@ Featured Categories
   gap: 2rem;
 
   &__box {
-    // background-color: lawngreen;
+    border-radius: 0.5rem;
     padding: 1rem 3rem;
+
+    // box-shadow: var(--shadow-primary);
 
     display: grid;
     align-items: center;
@@ -36,5 +38,13 @@ Featured Categories
 
   &__content {
     text-align: right;
+  }
+
+  &__type {
+    margin-top: -0.5rem;
+  }
+
+  &__btn {
+    margin-top: 0.5rem;
   }
 }
