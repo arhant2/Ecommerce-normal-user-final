@@ -24,6 +24,11 @@
     margin-top: 1.5rem;
   }
 
+  &__contact-icon {
+    display: inline-block;
+    width: 1.5rem;
+  }
+
   a#{&}__contact-each {
     display: block;
   }
