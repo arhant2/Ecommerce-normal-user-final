@@ -3,9 +3,7 @@ Featured Categories
 ----------------------------------*/
 
 .featured-categories {
-  width: 90%;
-  max-width: var(--width-main);
-  margin: auto;
+  @include widthMain;
   margin-top: 8rem;
 
   display: grid;

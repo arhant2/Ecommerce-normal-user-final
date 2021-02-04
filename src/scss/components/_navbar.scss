@@ -8,9 +8,7 @@ Navbar
 }
 
 .navbar {
-  width: 90%;
-  max-width: var(--width-main);
-  margin: 0 auto;
+  @include widthMain;
 
   height: var(--height-nav);
   font-size: 3rem;

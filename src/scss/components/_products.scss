@@ -1,8 +1,7 @@
 .products {
-  width: 90%;
-  max-width: var(--width-main);
-  margin: 10rem auto;
-
+  @include widthMain;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));

@@ -31,10 +31,9 @@ Home
   }
 
   &__each-inner {
+    @include widthMain;
+
     height: 100%;
-    width: 90%;
-    max-width: var(--width-main);
-    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1.2fr 1fr;

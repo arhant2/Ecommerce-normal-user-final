@@ -1,8 +1,9 @@
 .subscribe {
+  @include widthMain;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
   background: var(--gradient-primary);
-  width: 90%;
-  max-width: var(--width-main);
-  margin: 10rem auto;
   border-radius: 1rem;
 
   padding: 7% 4%;
