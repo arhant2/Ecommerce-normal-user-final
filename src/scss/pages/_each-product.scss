@@ -82,4 +82,94 @@
     position: absolute;
     width: 100%;
   }
+
+  /* Right side */
+  .each-product-main__content-each {
+    padding: 1rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-grey-light-3);
+    }
+  }
+
+  &__brand {
+    font-size: 1.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  &__ratings {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  &__ratings-star {
+    margin-right: 1rem;
+    color: var(--color-yellow);
+  }
+
+  // &__price-outer {
+  //   display: flex;
+  //   align-items: flex-end;
+  //   line-height: normal;
+  // }
+
+  &__price-act {
+    color: var(--color-new-blue);
+    font-size: 2.7rem;
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+
+  &__save-outer {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__save {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  &__features-list {
+    padding: 1rem 0;
+    list-style: none;
+
+    font-size: 1.2rem;
+    line-height: 2.3;
+    padding: 0.7rem 1rem;
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+
+  &__features-item {
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f058';
+      display: inline-block;
+      width: 1.8rem;
+    }
+  }
+
+  &__buy-btn {
+    margin: 1.5rem 0;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: var(--color-grey-dark-2);
+  }
 }
