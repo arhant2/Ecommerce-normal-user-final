@@ -1,0 +1,85 @@
+.each-product-main {
+  width: 90%;
+  max-width: var(--width-main);
+  margin: 2rem auto;
+
+  display: grid;
+  grid-template-columns: 45% 50%;
+  column-gap: 5%;
+  align-items: start;
+
+  // &__imgs-box {
+  // }
+
+  /* making a square box -  &__big-img-box is necessary to be absolute positioned */
+  &__big-img-box-outer {
+    padding-top: 100%;
+    position: relative;
+  }
+
+  &__big-img-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__lens {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    display: none;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      cursor: crosshair;
+
+      /* background-image: radial-gradient(rgb(52, 152, 219) 33%, transparent 33%); */
+      // background-image: radial-gradient(var(--color-blue) 33%, transparent 33%);
+      // background-size: 2px 2px;
+
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbC1vcGFjaXR5PSIuMDUiIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMnYySDB6Ii8+PHBhdGggZD0iTTAgMGgxdjFIMHoiIGZpbGw9IiM4REFDREEiLz48L2c+PC9zdmc+');
+
+      opacity: 0.6;
+      z-index: 2;
+    }
+  }
+
+  &__big-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__smaller-imgs-box {
+    width: 80%;
+    margin: 1rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 23.5%);
+    gap: 2%;
+    cursor: pointer;
+  }
+
+  &__smaller-img {
+    width: 100%;
+    box-shadow: var(--shadow-secondary);
+    border-radius: 4%;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__zoomed-img {
+    position: absolute;
+    width: 100%;
+  }
+}

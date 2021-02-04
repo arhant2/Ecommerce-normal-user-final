@@ -1,6 +1,6 @@
 // This loop will have to have generic color components, they can be easily iterated
 $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
-  'secondary';
+  'secondary', 'new-blue';
 
 :root {
   /* ------ Fonts ------ */
@@ -60,6 +60,12 @@ $colors: 'purple', 'green', 'blue', 'yellow', 'red', 'pink', 'primary',
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --color-grey-dark-4: #aaa;
+
+  --color-new-blue-lighter: #8c6dff;
+  --color-new-blue-lighter: #643aff;
+  --color-new-blue: #3c07ff;
+  --color-new-blue-dark: #2d00d3;
+  --color-new-blue-darker: #2200a0;
 
   /* Primary color */
   --color-primary-lighter: var(--color-blue-lighter);
