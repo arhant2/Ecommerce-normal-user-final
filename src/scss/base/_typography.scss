@@ -79,7 +79,37 @@ a.reset-anchor,
   }
 }
 
+.heading-tertiary {
+  font-size: 3.2rem;
+  line-height: 1.8;
+
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  position: relative;
+  transform: scaleX(0.9);
+  transform-origin: 0 0;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: '';
+    background: #ff523b;
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -3px;
+    left: 0%;
+  }
+}
+
 .heading-quadinary {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.para-primary {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  color: var(--color-grey-dark-2);
 }
