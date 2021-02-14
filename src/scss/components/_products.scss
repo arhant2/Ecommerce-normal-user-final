@@ -2,6 +2,7 @@
   @include widthMain;
   margin-top: 10rem;
   margin-bottom: 10rem;
+
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
@@ -21,52 +22,15 @@
     &:hover {
       box-shadow: var(--shadow-secondary);
       transform: translateY(-2px);
-
-      &__name {
-        text-decoration: underline dotted;
-      }
     }
   }
 
   &__box:hover &__name {
-    text-decoration: underline dotted;
+    text-decoration: underline;
+    text-decoration-style: dotted;
   }
 
   &__img {
     width: 100%;
-  }
-
-  &__brand {
-    font-size: 1.4rem;
-    color: var(--color-grey-dark-2);
-    margin-bottom: -0.5rem;
-  }
-
-  &__name {
-    font-size: 1.7rem;
-    font-weight: 500;
-  }
-
-  &__ratings {
-    margin: 0.3rem 0;
-    font-size: 1.4rem;
-  }
-
-  &__ratings-star {
-    color: var(--color-yellow);
-    font-size: 0.95em;
-    margin-right: 0.3rem;
-  }
-
-  &__price-act {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--color-blue-dark);
-  }
-
-  &__price-strike {
-    font-size: 1.4rem;
-    color: var(--color-grey-dark-2);
-    text-decoration: line-through;
   }
 }
