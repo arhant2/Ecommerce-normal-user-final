@@ -9,6 +9,56 @@
     border-bottom: 1px solid var(--color-grey-light-4);
   }
 
+  &__product {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content min-content min-content;
+    column-gap: 6rem;
+    justify-items: start;
+    margin-bottom: 2rem;
+  }
+
+  &__product-img {
+    grid-row: 1 / -1;
+    height: 7rem;
+  }
+
+  &__product-brand {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark-2);
+    margin-bottom: -0.5rem;
+  }
+
+  &__product-name {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  &__product-priceAndDis {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  &__product-price-act {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-blue-dark);
+  }
+
+  &__product-price-strike {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark-2);
+    text-decoration: line-through;
+  }
+
+  &__product-price-disc {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-grey-dark-2);
+  }
+
   &__top {
     display: flex;
     align-items: flex-end;
