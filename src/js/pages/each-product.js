@@ -65,8 +65,6 @@ if (lens && zoomedImg && toZoom && bigImg) {
   }
 
   function showZoomEffect() {
-    console.log('yaha aaya');
-
     zoomedImg.style.display = 'block';
     lens.style.display = 'block';
 
