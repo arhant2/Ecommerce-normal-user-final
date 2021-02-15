@@ -57,6 +57,15 @@
     }
   }
 
+  &--text-inital-dark {
+    color: var(--color-font);
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
   /* 3. Rounded corner */
   &--round {
     border-radius: 50rem;

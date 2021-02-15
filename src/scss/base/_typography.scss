@@ -91,6 +91,11 @@ textarea {
   transform-origin: 0 0;
   margin-bottom: 1rem;
 
+  &--2 {
+    font-family: var(--font-family-secondary);
+    font-weight: 700;
+  }
+
   &::before {
     content: '';
     background: #ff523b;

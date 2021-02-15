@@ -2,5 +2,6 @@
 import '../scss/main.scss';
 
 import './component-functions/sliders';
+import './component-functions/increment-decrement-input-number';
 
 import './pages/each-product';
