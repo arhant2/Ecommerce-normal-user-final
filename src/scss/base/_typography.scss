@@ -111,6 +111,23 @@ textarea {
 .heading-quadinary {
   font-size: 2rem;
   font-weight: 700;
+
+  &--2 {
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: #ff523b;
+      width: 5rem;
+      height: 1.5px;
+      border-radius: 0.5rem;
+      bottom: -0.7rem;
+      left: 0;
+    }
+  }
 }
 
 .para-primary {

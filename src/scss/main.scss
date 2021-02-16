@@ -10,6 +10,7 @@
 @import 'components/brands-ad';
 @import 'components/featured-categories';
 @import 'components/footer';
+@import 'components/form';
 @import 'components/reviews';
 @import 'components/navbar';
 @import 'components/product-desc';
@@ -17,10 +18,12 @@
 @import 'components/subscribe';
 @import 'components/tooltip';
 
+@import 'layout/account';
 @import 'layout/card';
 @import 'layout/inner-card';
 @import 'layout/product-inner-card';
 
+@import 'pages/address';
 @import 'pages/home';
 @import 'pages/cart';
 @import 'pages/each-product';

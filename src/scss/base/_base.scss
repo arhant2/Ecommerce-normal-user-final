@@ -19,5 +19,8 @@ html {
 /* Setting box sizing border box so that everyone can inherit */
 body {
   box-sizing: border-box;
-  // background-color: var(--color-background);
+  // background-color: var(--color-red);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
