@@ -1,5 +1,4 @@
 .account {
-  // background: lightgreen;
   display: grid;
 
   grid-template-columns: minmax(20rem, 22%) auto;
@@ -43,7 +42,7 @@
   &__path-list {
     list-style: none;
     display: flex;
-    // font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   &__path-item {
