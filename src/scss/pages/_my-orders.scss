@@ -18,14 +18,13 @@
   }
 
   &__order-no {
+    font-weight: 500;
     line-height: 1.4;
     letter-spacing: 0.4px;
   }
 
   &__small-text {
     font-size: 1.3rem;
-    // color: var(--color-grey-dark-2);
-    // letter-spacing: 0.2px;
     font-style: italic;
   }
 
