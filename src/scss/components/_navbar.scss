@@ -2,66 +2,23 @@
 Navbar
 ----------------------------------*/
 
-// .navbar-outer {
-//   // background: var(--gradient-primary);
-// }
+.navbar-outer {
+  // background: var(--gradient-primary);
+  border-bottom: 1px solid var(--color-grey-light-3);
+}
 
 .navbar {
-  border-bottom: 1px solid var(--color-grey-light-3);
-  // position: fixed;
-  width: 100%;
-  z-index: 150;
-  top: 0;
-  left: 0;
-  position: absolute;
+  @include widthMain;
+
   height: var(--height-nav);
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--font-family-secondary);
+  // padding: 0;
 
-  &--scrolled {
-    background-color: var(--color-white);
-    position: fixed;
-    height: calc(var(--height-nav) * 0.9);
-    transition: all 0.1s;
-    box-shadow: 0px 1px 10px var(--color-grey-light-4);
-  }
-
-  &__hamburger {
-    // background: orangered;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: inherit;
-    width: var(--height-nav);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-  }
-
-  &__hamburger-circle {
-    // background: var(--color-grey-light-1);
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0px 1px 10px var(--color-grey-light-4);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  &__actual {
-    @include widthMain;
-    height: 100%;
-
-    font-size: 3rem;
-    font-weight: 800;
-    font-family: var(--font-family-secondary);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &__list {
     list-style: none;
