@@ -10,7 +10,7 @@
 
   &--show {
     // display: block;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     width: calc(100% + 40rem);
     transform: translateX(0);
   }
@@ -26,7 +26,7 @@
   &__cross {
     position: absolute;
     left: 32.5rem;
-    top: 2rem;
+    top: 1rem;
     color: var(--color-grey-light-2);
     line-height: 1;
     font-size: 4rem;

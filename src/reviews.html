@@ -25,10 +25,19 @@
 
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body class="body">
+  <body class="body scrollbar">
     <!-- navbar -->
-    <div class="navbar-outer">
-      <nav class="navbar reset-anchor">
+    <div class="navbar">
+      <nav class="navbar__inner reset-anchor">
+        <div
+          class="navbar__hamburger js--components-function--sidebar__hamburger"
+        >
+          <div class="navbar__hamburger-circle">
+            <!-- <i class="fas fa-bars"></i> -->
+            <div class="navbar__hamburger-line"></div>
+          </div>
+        </div>
+
         <a href="./index.html">
           <div class="navbar__logo typography-logo-style">
             <i class="fas fa-camera-retro"></i> Benfr
@@ -57,6 +66,71 @@
           </li>
         </ul>
       </nav>
+    </div>
+
+    <div
+      class="sidebar__container js--components-function--sidebar__container"
+      data-toggle-class="sidebar__container--show"
+    >
+      <aside class="sidebar js--components-function--sidebar scrollbar">
+        <div class="sidebar__cross js--components-function--sidebar__cross">
+          &Cross;
+        </div>
+
+        <div class="sidebar__card">
+          <div class="sidebar__brand typography-logo-style">
+            <i class="fas fa-camera-retro"></i> Benfr
+          </div>
+        </div>
+        <div class="sidebar__card">
+          <h4 class="sidebar__heading">By Brand</h4>
+          <ul class="sidebar__list reset-anchor">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Apple</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Google</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Samsung</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Dell</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">All Brands</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__card">
+          <h4 class="sidebar__heading">By Category</h4>
+          <ul class="sidebar__list reset-anchor">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Mobile</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Laptop</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Camera</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Speaker</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">All Categories</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="reset-anchor sidebar__user">
+          <span class="sidebar__user-icon">
+            <i class="fas fa-user-circle"></i>
+          </span>
+          Arhant Jain
+        </a>
+      </aside>
     </div>
 
     <!-- Reviews -->
