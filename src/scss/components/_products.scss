@@ -3,6 +3,23 @@
   margin-top: 10rem;
   margin-bottom: 10rem;
 
+  &--top-margin-smaller {
+    margin-top: 5rem;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__top-content {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));

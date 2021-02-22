@@ -96,6 +96,10 @@ textarea {
     font-weight: 700;
   }
 
+  &--bigger {
+    font-size: 3.4rem;
+  }
+
   &::before {
     content: '';
     background: #ff523b;

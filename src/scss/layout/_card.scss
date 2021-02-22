@@ -6,4 +6,21 @@
   &__heading {
     margin-bottom: 3.5rem;
   }
+
+  &__top &__heading {
+    margin-bottom: 0;
+  }
+
+  &__top {
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-content {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
