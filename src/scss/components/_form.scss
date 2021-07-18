@@ -39,6 +39,16 @@
 
     &:focus {
       border-color: var(--color-grey-dark-3);
+
+      border-left: 2px solid var(--color-green);
+
+      &:invalid {
+        border-left: 2px solid var(--color-red);
+      }
     }
+  }
+
+  &__text {
+    font-size: 0.82em;
   }
 }
